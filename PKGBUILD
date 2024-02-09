@@ -2,7 +2,7 @@
 # Maintainer: Mark Cornick <mark@markcornick.com>
 
 pkgname='clilol-bin'
-pkgver=1.0.11
+pkgver=1.0.12
 pkgrel=1
 pkgdesc='A CLI for omg.lol'
 url='https://clilol.readthedocs.io/'
@@ -11,17 +11,17 @@ license=('MPL-2.0')
 provides=('clilol')
 conflicts=('clilol')
 
-source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://git.mcornick.dev/mcornick/clilol/releases/download/v1.0.11/clilol_1.0.11_linux_arm64.tar.gz")
-sha256sums_aarch64=('14537161dd2a90f45db79966b5fad386a0dff10b91d7a14bd330d4fd109768ee')
+source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.12/clilol_1.0.12_linux_arm64.tar.gz")
+sha256sums_aarch64=('71bc3d78b0c1ecc2e1e1c75713ec979447257ad9581068250792724d12fc80df')
 
-source_armv6h=("${pkgname}_${pkgver}_armv6h.tar.gz::https://git.mcornick.dev/mcornick/clilol/releases/download/v1.0.11/clilol_1.0.11_linux_armv6.tar.gz")
-sha256sums_armv6h=('b7b45ee4229df455099dbd29da4335235a911483d14dc8f9b0376e307dc6c083')
+source_armv6h=("${pkgname}_${pkgver}_armv6h.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.12/clilol_1.0.12_linux_armv6.tar.gz")
+sha256sums_armv6h=('2bd0ab02ed2078c876a5272b9b09fdf316f77bedd0932677862dc42863238c3a')
 
-source_i686=("${pkgname}_${pkgver}_i686.tar.gz::https://git.mcornick.dev/mcornick/clilol/releases/download/v1.0.11/clilol_1.0.11_linux_386.tar.gz")
-sha256sums_i686=('2661ce639015383758607269c35c403b08e6d7f6a5b8d7a0a7d4035a8289d652')
+source_i686=("${pkgname}_${pkgver}_i686.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.12/clilol_1.0.12_linux_386.tar.gz")
+sha256sums_i686=('5c4863fcc24441484fd52f61c9b33eb9c98cf4c2d6a9f85b9e3b65fbfb774cc1')
 
-source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://git.mcornick.dev/mcornick/clilol/releases/download/v1.0.11/clilol_1.0.11_linux_amd64.tar.gz")
-sha256sums_x86_64=('8b741f3e73bcb323e7d08e8f3d6ff22922fde2c9f4ec21d9dcedb81fff1b1b09')
+source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.12/clilol_1.0.12_linux_amd64.tar.gz")
+sha256sums_x86_64=('ee84eeac3e41eebff804288f9e30711e4abf77846ded76fae3abe4b0dea0b6f6')
 
 package() {
   install -Dm755 "./clilol" "${pkgdir}/usr/bin/clilol"
