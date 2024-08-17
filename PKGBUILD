@@ -2,26 +2,23 @@
 # Maintainer: Mark Cornick <mark@markcornick.com>
 
 pkgname='clilol-bin'
-pkgver=1.0.17
+pkgver=1.0.18
 pkgrel=1
 pkgdesc='A CLI for omg.lol'
 url='https://clilol.readthedocs.io/'
-arch=('aarch64' 'armv6h' 'i686' 'x86_64')
+arch=('aarch64' 'i686' 'x86_64')
 license=('MPL-2.0')
 provides=('clilol')
 conflicts=('clilol')
 
-source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.17/clilol_1.0.17_linux_arm64.tar.gz")
-sha256sums_aarch64=('e8edb0052c373dc4c391716e8d6317b47d81e8f855f0e20d861e163814515825')
+source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.18/clilol_1.0.18_linux_arm64.tar.gz")
+sha256sums_aarch64=('886b9d0cb7f93bc820d302a064794292baae139ed3b40a98039fe588e7986c2c')
 
-source_armv6h=("${pkgname}_${pkgver}_armv6h.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.17/clilol_1.0.17_linux_armv6.tar.gz")
-sha256sums_armv6h=('8f79810b11678b64399a84743912a07e898d80e4928825abc210c73d044b73ba')
+source_i686=("${pkgname}_${pkgver}_i686.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.18/clilol_1.0.18_linux_386.tar.gz")
+sha256sums_i686=('b9958447edec07c528012891e466282e8596ecb68e067d6936699f3a06aa7099')
 
-source_i686=("${pkgname}_${pkgver}_i686.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.17/clilol_1.0.17_linux_386.tar.gz")
-sha256sums_i686=('51dd74640c5246e7e9fd2d6695c749d85e0a7ce07d331c803765e067ff6fc343')
-
-source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.17/clilol_1.0.17_linux_amd64.tar.gz")
-sha256sums_x86_64=('7de8aa342b8c406c69d64639c9057322a8583bf48cc5e9ddb23b3e13808ac4ee')
+source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.18/clilol_1.0.18_linux_amd64.tar.gz")
+sha256sums_x86_64=('fecb4789842d88e989b66dd91cdec1ba4df562439a17e0e6512fac96cdadf6d1')
 
 package() {
   install -Dm755 "./clilol" "${pkgdir}/usr/bin/clilol"
