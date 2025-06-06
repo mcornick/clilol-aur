@@ -2,7 +2,7 @@
 # Maintainer: Mark Cornick <mark@markcornick.com>
 
 pkgname='clilol-bin'
-pkgver=1.0.24
+pkgver=1.0.27
 pkgrel=1
 pkgdesc='A CLI for omg.lol'
 url='https://clilol.readthedocs.io/'
@@ -11,14 +11,14 @@ license=('MPL-2.0')
 provides=('clilol')
 conflicts=('clilol')
 
-source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.24/clilol_1.0.24_linux_arm64.tar.gz")
-sha256sums_aarch64=('53e0d076732570841dbfea4e5543c097be05d4e157c3ead93ef88a12bef25803')
+source_aarch64=("${pkgname}_${pkgver}_aarch64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.27/clilol_1.0.27_linux_arm64.tar.gz")
+sha256sums_aarch64=('54a753121213bb03a1123edd3313aedff59003052f800e08af4a70d05b77f5a7')
 
-source_i686=("${pkgname}_${pkgver}_i686.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.24/clilol_1.0.24_linux_386.tar.gz")
-sha256sums_i686=('15043f352d4aaa5e827d0d39b46ff694886d812c9fd1364792c905bac47c8c55')
+source_i686=("${pkgname}_${pkgver}_i686.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.27/clilol_1.0.27_linux_386.tar.gz")
+sha256sums_i686=('9bc1d883a1ed1b66535c863bfe61259b27d6f08fe10198fa8564b7f431ddad55')
 
-source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.24/clilol_1.0.24_linux_amd64.tar.gz")
-sha256sums_x86_64=('93a4c5de0b4d8ea99ea75c7470803b9cf07af4a785930889c2507d28de992da3')
+source_x86_64=("${pkgname}_${pkgver}_x86_64.tar.gz::https://github.com/mcornick/clilol/releases/download/v1.0.27/clilol_1.0.27_linux_amd64.tar.gz")
+sha256sums_x86_64=('b2e6931eafe2e0789535fad0555dac5016aa782036fb548c8684f84ea6a8b71c')
 
 package() {
   install -Dm755 "./clilol" "${pkgdir}/usr/bin/clilol"
