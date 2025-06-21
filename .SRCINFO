@@ -1,19 +1,19 @@
 pkgbase = clilol-bin
 	pkgdesc = A CLI for omg.lol
-	pkgver = 1.1.1
+	pkgver = 1.1.2
 	pkgrel = 1
 	url = https://clilol.readthedocs.io/
 	license = MPL-2.0
 	conflicts = clilol
 	provides = clilol
 	arch = aarch64
-	source_aarch64 = https://github.com/mcornick/clilol/releases/download/v1.1.1/clilol_1.1.1_linux_arm64.tar.gz
-	sha256sums_aarch64 = 145af72a601b9478da0ddd82ca330d284d94ddaf3e4dc1206e4d643ddfffbe99
+	source_aarch64 = https://github.com/mcornick/clilol/releases/download/v1.1.2/clilol_1.1.2_linux_arm64.tar.gz
+	sha256sums_aarch64 = aa7a5823dc92def26557ef244484ea12320655f41da8c0efd9b4e151c005a77d
 	arch = i686
-	source_i686 = https://github.com/mcornick/clilol/releases/download/v1.1.1/clilol_1.1.1_linux_386.tar.gz
-	sha256sums_i686 = 9527799d1f0af257d58a71e7564aa82666c19b2173c4928cca46ee671204c2d5
+	source_i686 = https://github.com/mcornick/clilol/releases/download/v1.1.2/clilol_1.1.2_linux_386.tar.gz
+	sha256sums_i686 = 5fcfe7035b7434cc8d37bdc4795295b88212c846ee3c987b955a3f28b6865880
 	arch = x86_64
-	source_x86_64 = https://github.com/mcornick/clilol/releases/download/v1.1.1/clilol_1.1.1_linux_amd64.tar.gz
-	sha256sums_x86_64 = 309dea76e2bba08dd890075eb4d18649ab9e4904df91c186a4605d26a671106a
+	source_x86_64 = https://github.com/mcornick/clilol/releases/download/v1.1.2/clilol_1.1.2_linux_amd64.tar.gz
+	sha256sums_x86_64 = 0ef1899d614b90c4e308e168e8863bbb0be6cc5256d85240d6d4cd8117ab10e1
 	
 pkgname = clilol-bin
